@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Questão 02</title>
+    <title>Document</title>
 </head>
 <body>
     <form action="" method="get">
@@ -16,18 +16,25 @@
         <input type="submit" value="Enviar">
     </form>
 <?php
+
 $n1 = $_GET['n1'] ?? 0;
 $n2 = $_GET['n2'] ?? 0;
 
-echo "Soma: " . ($n1 + $n2) . "<br>";
-echo "Subtração: " . ($n1 - $n2) . "<br>";
-echo "Multiplicação: " . ($n1 * $n2) . "<br>";
 
-if ($n2 != 0) {
-    echo "Divisão: " . ($n1 / $n2);
-} else {
-    echo "Divisão: Não é possível dividir por zero";
-}
+echo "Soma: ";
+echo $n1 + $n2;
+echo "<br>";
+
+echo "Subtração: ";
+echo $n1 - $n2;
+echo "<br>";
+
+echo "Multiplicação: ";
+echo $n1 * $n2;
+echo "<br>";
+
+echo "Divisão: ";
+echo $n1 / $n2;
 ?>
 
 </body>
