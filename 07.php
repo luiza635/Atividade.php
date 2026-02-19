@@ -16,10 +16,12 @@
 
     $temperatura = $_GET["celcius"] ?? 0;
 
-    $fah = 
+    $fah =  $temperatura * 1.8 + 32;
+
+    echo "Temperatura em Celsius: " . $temperatura . "°C <br>";
+    echo "Temperatura em Fahrenheit: " . $fah . " °F";
 
     ?>
 
-
-</body>
-</html>
+    </body>
+    </html>
