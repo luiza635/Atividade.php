@@ -1,25 +1,29 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Loja Mamão com Açúcar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
 
-<form action="" method="get">
-    <label for="valor">Valor da compra:</label>
-    <input type="text" name="valor" id="valor">
+<form method="POST">
+        <label>Digite o valor do produto:</label>
+        <input type="number" name="valor" step="0.1">
+        <br>
+        <button type="submit">Enviar valor</button>
+    </form>
+    <br>
 
-    <input type="submit" value="Calcular">
-</form>
+    <?php
 
-<?php
-$valor = $_GET['valor'] ?? 0;
-
-$prestacao = $valor / 5;
-
-echo "Valor de cada prestação: R$ $prestacao";
-?>
-
+    if ($_POST){
+        $produto = $_POST['valor'];
+        $valor = (float)$produto / 5;
+        echo "O produto pode ser pago em 5 prestações (sem juros) de: " . $valor;
+    }
+    
+    ?>
+    
 </body>
 </html>
