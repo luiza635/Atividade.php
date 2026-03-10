@@ -32,9 +32,11 @@
         $nome = $_POST['nome'];
         $idade = $_POST['idade'];
         $sexo = $_POST['sexo'];
+
         $salariofixo = (float)$_POST['salariofixo'];
         $desconto = $salariofixo * 0.10;
         $salarioliquido = $salariofixo - $desconto;
+        
         echo "Nome do Funcionário: " . $nome . "<br>";
         echo "Salário Líquido: R$ " . $salarioliquido . "</b>";
     }
