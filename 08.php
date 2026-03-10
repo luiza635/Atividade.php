@@ -8,7 +8,8 @@
 <h2>Conversão de Dólar para Real</h2>
 
 <form method="post">
-    Cotação do dólar: <input type="text" name="cotacao"><br><br>
+    Cotação do dólar:
+    <input type="text" name="cotacao"><br><br>
     Quantidade de dólares: <input type="text" name="dolares"><br><br>
     <input type="submit" value="Converter">
 </form>
